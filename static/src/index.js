@@ -10,10 +10,5 @@ const app = new Vue({
     el: ".app",
     components: {
         'nav-bar': Header
-    },
-    data: function() {
-        return {
-            message: "Hello C++ & GAE/FE App!"
-        }
     }
 })
