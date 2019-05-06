@@ -1,6 +1,6 @@
 FROM gcc:latest
-COPY . /cpp-dev
-WORKDIR /cpp-dev
+COPY . /cpp-gae-fe
+WORKDIR /cpp-gae-fe
 EXPOSE 8080
 RUN g++ main.cpp httplib.h -std=c++17 -pthread 
 CMD ["./a.out"]
