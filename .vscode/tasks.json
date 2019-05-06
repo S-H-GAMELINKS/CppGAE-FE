@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cmd",
+            "args": ["/C", "docker rmi cpp-gae-fe && docker build -t cpp-gae-fe . && docker run --rm --name cpp-gae-fe -i -p 8080:8080 -t cpp-gae-fe"],
+        }
+    ]
+}
