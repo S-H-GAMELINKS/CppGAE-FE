@@ -4,4 +4,9 @@ module.exports = {
         filename: 'index.js',
         path: `${__dirname}`
     },
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    },
 }
