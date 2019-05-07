@@ -28,16 +28,19 @@ int main() {
 
     const auto routes = std::experimental::make_array("/", "/about", "/contact", "/chats", "/chats/\\d+");
 
+    const auto routes_js = std::experimental::make_array("/index.js", "/chats/index.js" );
+
     for(auto&& r : routes)
         svr.Get(r, [&](const httplib::Request& req, httplib::Response& res){
             std::cout << "GET: routes " << r << std::endl;
             res.set_content(html, "text/html");
         });
 
-    svr.Get("/index.js", [&](const httplib::Request& req, httplib::Response& res){
-        std::cout << "GET: routes '/'" << std::endl;
-        res.set_content(js, "text/javascript");
-    });
+    for (auto&& r : routes_js)
+        svr.Get(r, [&](const httplib::Request& req, httplib::Response& res){
+            std::cout << "GET: routes '/'" << std::endl;
+            res.set_content(js, "text/javascript");
+        });
 
     svr.listen("0.0.0.0", 8080);
 }
