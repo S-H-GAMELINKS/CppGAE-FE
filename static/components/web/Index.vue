@@ -1,8 +1,14 @@
 <template>
     <div class="container">
-        <h1>Index Pagse</h1>
-
-        <button v-if="!this.$store.state.session" v-on:click="login" class="btn btn-primary">Login to GitHub</button>
+        <div class="jumbotron">
+            <h1 class="display-4">C++ GAE/FE Sample!</h1>
+            <p class="lead">Very Simple Chat App!</p>
+            <hr class="my-4">
+            <p>Developed by C++/Stmilus/Vue.js/FireBase/Docker</p>
+            <p class="lead">
+                <button v-if="!this.$store.state.session" v-on:click="login" class="btn btn-primary">Login to GitHub</button>
+            </p>
+        </div>
     </div>    
 </template>
 
