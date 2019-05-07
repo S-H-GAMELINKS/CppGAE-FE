@@ -36,6 +36,9 @@ const store = new Vuex.Store({
         },
         getSession(state, bool){
             state.session = bool;
+        },
+        deleteSession(state, bool) {
+            state.session = bool;
         }
     },
     plugins: [ createPersistedState(
