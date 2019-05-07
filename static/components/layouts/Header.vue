@@ -14,6 +14,7 @@
                     <router-link class="dropdown-item" to="/">Top</router-link>
                     <router-link class="dropdown-item" to="/about">About</router-link>
                     <router-link class="dropdown-item" to="/contact">Contact</router-link>
+                    <router-link class="dropdown-item" to="/chats">Chat</router-link>
                   </div>
                 </li>
             </ul>
