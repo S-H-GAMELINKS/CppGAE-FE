@@ -28,7 +28,7 @@ const store = new Vuex.Store({
         provider: provider
     },
     mutations: {
-        loginLocusSolus(state, id) {
+        login(state, id) {
             state.id = String(id);
         },
         setUserName(state, name) {
