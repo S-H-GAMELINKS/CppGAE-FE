@@ -8,7 +8,7 @@
             <input type="text" class="form-control" data-target="chat.content"> 
         </div>
         <p>
-            <button v-if="!this.$store.state.session" type="button" class="btn btn-primary" data-action="click->chat#submit">Submit</button>
+            <button v-if="this.$store.state.session" type="button" class="btn btn-primary" data-action="click->chat#submit">Submit</button>
         </p>
         <div class="talk-box">
             <div class="talk-area" data-target="chat.talks"></div>
