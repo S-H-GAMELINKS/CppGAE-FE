@@ -34,6 +34,8 @@ export default class extends Controller {
     submit() {
         database.ref('cppgaefe' + String(location.pathname).replace(/\/chats/, '')).push({
             content: this.contentTarget.value,
+            name: store.state.name,
+            icon: store.state.icon
         });
         this.contentTarget.value = "";
     }
