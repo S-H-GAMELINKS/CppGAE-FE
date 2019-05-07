@@ -26,7 +26,7 @@ int main() {
 
     const std::string js = load_static("static/index.js");
 
-    const auto routes = std::experimental::make_array("/", "/about", "/contact", "/chats");
+    const auto routes = std::experimental::make_array("/", "/about", "/contact", "/chats", "/chats/\\d+");
 
     for(auto&& r : routes)
         svr.Get(r, [&](const httplib::Request& req, httplib::Response& res){
