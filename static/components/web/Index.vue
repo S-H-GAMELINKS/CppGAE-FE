@@ -32,6 +32,7 @@ export default {
             firebase.auth().signInWithPopup(provider).then((response) => {
                 this.$store.commit('login', response.user.uid);
                 this.$store.commit('setUserName', response.additionalUserInfo.profile.name);
+                this.$store.commit('setUserIcon', response.additionalUserInfo.profile.avatar_url);
             }, (error) => {
                 console.log(error)
             })

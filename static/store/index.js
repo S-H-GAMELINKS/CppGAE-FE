@@ -24,6 +24,7 @@ const store = new Vuex.Store({
         database: database,
         id: "",
         name: "",
+        icon: "",
         session: false,
         provider: provider
     },
@@ -33,6 +34,9 @@ const store = new Vuex.Store({
         },
         setUserName(state, name) {
             state.name = String(name);
+        },
+        setUserIcon(state, path){
+            state.icon = path;
         },
         getSession(state, bool){
             state.session = bool;
