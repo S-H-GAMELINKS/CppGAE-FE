@@ -23,7 +23,7 @@ export default class extends Controller {
                     this.titleTarget.innerHTML = `<h1>${cppgaefe[i][1]}</h1>`
                 }
                 if (cppgaefe[i][1].content !== undefined && cppgaefe[i][1].content !== "") {
-                    this.talksTarget.innerHTML += `<div class="talk" data>${cppgaefe[i][1].content}</div>`;
+                    this.talksTarget.innerHTML += `<div class="talk">${cppgaefe[i][1].content}</div>`;
                 }
             }
         }, (errorObject) => {
