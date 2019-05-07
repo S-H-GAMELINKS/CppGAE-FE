@@ -1150,7 +1150,7 @@ findup-sync@^2.0.0:
     micromatch "^3.0.4"
     resolve-dir "^1.0.1"
 
-firebase@^5.11.1:
+firebase@^5.9.1:
   version "5.11.1"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-5.11.1.tgz#e7d376265545d7b0538b4679a96145c26a2b5c39"
   dependencies:
